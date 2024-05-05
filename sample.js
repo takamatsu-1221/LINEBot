@@ -1,15 +1,11 @@
-var ACCESS_TOKEN = 'e2RIvKwUTVo3ROzFJs7rr7RnIt/+bnn2NWm5sof1/wFfHGwYu/ebl29ayyLMC8a2VWz61euexul3DDBljAq+A9BqDRcMbSbiWnLgmYFvFcROj6aoTDx3qg45CiKfrmwOl+OoXAh1H361UlIcN5vvHAdB04t89/1O/w1cDnyilFU=';
+var ACCESS_TOKEN = '';
 
 function doPost(e) {
   var event = JSON.parse(e.postData.contents).events[0];
-  //Webhookで受信する応答トークン
   var replyToken = event.replyToken;
-  //ユーザーからのメッセージ
   var userMessage = event.message.text;
-  //応答メッセージ用のAPI_URL
   var url = 'https://api.line.me/v2/bot/message/reply';
-  //応答するメッセージに関する変数
-  //メッセージの中身
+  //メッセージ
   var sendMessage = "";
   var sendMessage_contents = [];
   var sendMessage_overlapping = [];
