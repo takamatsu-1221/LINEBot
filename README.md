@@ -16,3 +16,4 @@ LINEのメッセージをトリガとして，Google apps scriptを用いて
 ## その他
 制作期間は約2週間  
 Javascriptを1から学んだため時間を要した．
+![Image](https://github.com/user-attachments/assets/56bb2d28-92dd-4970-b81d-9b78d78f3907)
